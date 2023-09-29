@@ -12,8 +12,6 @@ ___
 3. Run server and db
     > docker-compose up
 
-    All env variables will be copied from env.example
-
 4. Apply migrations for create and fill db
     > docker exec -it test_task_api alembic upgrade head
 
