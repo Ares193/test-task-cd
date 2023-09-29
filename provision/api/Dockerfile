@@ -19,4 +19,4 @@ COPY ./alembic.ini /app/alembic.ini
 COPY ./pyproject.toml /app/pyproject.toml
 COPY ./app /app/app/
 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["python", "app/main.py"]
