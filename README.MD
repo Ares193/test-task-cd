@@ -3,16 +3,21 @@ ___
 
 ## Getting Started
 ___
+1. Copy env
+   > cp .env.example .env
 
-1. Run server and db
+2. Create network
+   > docker network create test_network
+
+3. Run server and db
     > docker-compose up
 
     All env variables will be copied from env.example
 
-2. Apply migrations for create and fill db
+4. Apply migrations for create and fill db
     > docker exec -it test_task_api alembic upgrade head
 
-3. Go to http://0.0.0.0:8000
+5. Go to http://0.0.0.0:8000
 
 ## Built with
 ___

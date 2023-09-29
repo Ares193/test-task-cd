@@ -17,6 +17,6 @@ ENV PATH="/opt/venv/bin:$PATH" \
     PYTHONPATH=/app
 COPY ./alembic.ini /app/alembic.ini
 COPY ./pyproject.toml /app/pyproject.toml
-COPY ./.env.example /app/.env
 COPY ./app /app/app/
+
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

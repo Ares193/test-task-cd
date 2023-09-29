@@ -7,7 +7,7 @@ main_router = APIRouter()
 
 
 @main_router.get('/', include_in_schema=False)
-def main_page(request: Request):
+def main_page():
     return RedirectResponse(f"{str(settings.API_BASE_URL)}/docs")
 
 
